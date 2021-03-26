@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+prefix=$(cd $(dirname $0) && pwd)
+$prefix/birth $1 | xargs -I {} date -d @{}
